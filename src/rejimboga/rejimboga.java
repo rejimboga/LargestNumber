@@ -7,32 +7,22 @@ public class rejimboga {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Перше число:");
-        String s1 = sc.nextLine();
-        int a = Integer.parseInt(s1);
+        int s1 = sc.nextInt();
 
         System.out.print("Друге число:");
-        String s2 = sc.nextLine();
-        int b = Integer.parseInt(s2);
+        int s2 = sc.nextInt();
 
         System.out.print("Третє число:");
-        String s3 = sc.nextLine();
-        int c = Integer.parseInt(s3);
+        int s3 = sc.nextInt();
 
         System.out.print("Четверте число:");
-        String s4 = sc.nextLine();
-        int d = Integer.parseInt(s4);
+        int s4 = sc.nextInt();
 
-        if(a > b && a > c && a > d) {
-            System.out.println("Найбільше число:" + s1);
-        }
-        if(b > a && b > c && b > d){
-            System.out.println("Найбільше число:" + s2);
-        }
-        if(c > a && c > b && c > d){
-            System.out.println("Найбільше число:" + s3);
-        }
-        if(d > a && d > b && d > c){
-            System.out.println("Найбільше число:" + s4);
-        }
+        int max = s1;
+
+        if(s2 > max) max = s2;
+        if(s3 > max) max = s3;
+        if(s4 > max) max = s4;
+        System.out.println("Найбільше число:" + max);
     }
 }
